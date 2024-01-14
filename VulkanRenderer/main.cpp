@@ -300,6 +300,8 @@ private:
 			if (vkCreateImageView(device, &createInfo, nullptr, &swapChainImageViews[i]) != VK_SUCCESS) {
 				throw std::runtime_error("failed to create image views!");
 			}
+
+			std::cout << "\tCreate image view " << i <<", Success\n";
 		}
 	}
 
